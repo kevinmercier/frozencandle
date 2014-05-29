@@ -1,0 +1,123 @@
+/*---------------------------------------------------------------------------
+
+
+Queries SASS File
+By: Kevin Mercier
+Version: 1.0.0
+Links: Main.scss, Theme.scss
+
+
+---------------------------------------------------------------------------*/
+
+
+/* --------------------------------------
+	Global Queries
+---------------------------------------*/
+
+@media( min-width: 0px ){
+	
+	@include global;
+
+}
+
+
+/* --------------------------------------
+	Specific Queries
+---------------------------------------*/
+
+
+@media ( min-width : 0px ) and ( max-width: $screen-xs-bp ) {
+	
+	@include modules(xs-bp);
+	@include xs;
+
+}
+
+@media ( min-width : $screen-xs-bp + 1 ) and ( max-width: $screen-sm-bp ){
+	
+	@include modules(sm-bp);
+	@include sm; 
+
+}
+
+@media ( min-width : $screen-sm-bp + 1) and ( max-width: $screen-md-bp ){
+	
+	@include modules(md-bp);
+	@include md; 
+
+}
+
+@media ( min-width : $screen-md-bp + 1 ) and ( max-width: $screen-lg-bp ){
+	
+	@include modules(lg-bp);
+	@include lg; 
+
+}
+
+
+/* --------------------------------------
+	Query Range
+---------------------------------------*/
+
+
+
+@media ( min-width : $screen-xs-bp + 1 ){
+
+	@include modules(gt-xs-bp);
+	@include gt-xs;
+
+}
+
+@media ( min-width : $screen-sm-bp + 1 ){
+
+	@include modules(gt-sm-bp);
+	@include gt-sm;
+
+}
+
+@media ( min-width : $screen-md-bp + 1 ){
+
+	@include modules(gt-md-bp);
+	@include gt-md;
+
+}
+
+@media ( min-width: $screen-lg-bp + 1 ){
+
+	@include modules(gt-lg-bp);
+	@include gt-lg;
+
+}
+
+@media ( max-width : $screen-sm-bp ){
+
+	@include modules(lt-sm-bp);
+	@include lt-sm;
+
+}
+
+@media ( max-width : $screen-md-bp ){
+
+	@include modules(lt-md-bp);
+	@include lt-md;
+
+}
+
+@media ( max-width : $screen-lg-bp ){
+
+	@include modules(lt-lg-bp);
+	@include lt-lg;
+
+}
+
+
+/* --------------------------------------
+	Print
+---------------------------------------*/
+
+@media print{
+	
+	@include print;
+	.print-hide{ display: block !important; }
+
+}

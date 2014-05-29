@@ -1,0 +1,58 @@
+/*---------------------------------------------------------------------------
+
+
+Site Config SASS File
+By: Kevin Mercier
+Version: 1.0.0
+Parent: Main.scss
+Children: All
+
+
+---------------------------------------------------------------------------*/
+
+
+
+/* --------------------------------------
+	Layout
+---------------------------------------*/
+
+$screen-xs-bp: 600px;
+$screen-sm-bp: 768px;
+$screen-md-bp: 992px;
+$screen-lg-bp: 1100px;
+
+$page-max-width: 1500px;
+
+$menu-item-count: 7;
+
+$sidebar-width: 384px;
+$grid: 24px;
+
+/* --------------------------------------
+	Typography
+---------------------------------------*/ 
+
+$text-color: #333;
+$quiet-color: #ccc;
+$loud-color: #000;
+$heading-color: #111;
+
+$link-color: #2989c6;
+$link-hover-color: saturate(#2989c6, 20%);
+$link-visited-color: saturate(#2989c6, 10%);
+
+$base-font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 300;
+
+$fixed-font-family: 'proxima-nova-extra-condensed', Helvetica, Arial, sans-serif;
+$fixed-font-size: 15px;
+$fixed-line-height: 1.2;
+
+$heading-font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+$heading-font-weight: 700;
+
+
+/* --------------------------------------
+	Design
+---------------------------------------*/

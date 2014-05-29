@@ -1,0 +1,58 @@
+/*---------------------------------------------------------------------------
+
+
+Navigation SASS File
+By: Kevin Mercier
+Version: 1.0.0
+Parent: config.scss
+
+
+---------------------------------------------------------------------------*/
+
+$querybreakpoint: coming soon;
+
+
+@mixin navigation($current_query){
+
+	//Full Menu
+
+	@if $current_query == gt-md-bp {
+
+		//Full Flyout
+
+		@if $full-menu-type == flyout {
+
+
+		}
+
+	} 
+
+	//Condensed Menu
+
+	@else if $current_query == lt-sm-bp {
+
+		//Mobile Side Flyout
+
+		@if $mobile-menu-type == side-flyout{
+
+
+		}
+
+		@if $mobile-menu-type == overlay{
+
+			@include mobile-toggle;
+			@include overlay; 
+
+		}
+
+	}
+
+}
+
+@mixin mobile-toggle(){
+
+	body{ padding-top: 48px; }
+	.mobile-menu{ z-index: 80; height: 48px; line-height: 48px; position: fixed; top: 0; width: 100%; }
+
+}
+

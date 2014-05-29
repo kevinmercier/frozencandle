@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <script type="text/javascript" src="//use.typekit.net/rfs4aiq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script src="assets/js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="page-wrap">
+        <div id="toggle-nav">
+            <a id="menu-toggle" href="#" alt="Menu">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </a>
+            <a id="contact-toggle" alt="Contact Me" href="#">
+                <span class="icon phone" data-icon="&#xe60a"></span>
+            </a>
+            <div id="page-progress">
+                <a href="#" class="dot active"></a>
+                <a href="#" class="dot"></a>
+                <a href="#" class="dot"></a>
+                <a href="#" class="dot"></a>
+            </div>
+        </div>
+        <nav id="main-menu">
+            <a href="#" class="current">
+                <div class="title">Holmes</div>
+                <div class="icon" data-icon="&#xe602"></div>
+            </a>
+            <a href="#">
+                <div class="title">Menu Item Two</div>
+                <div class="icon" data-icon="&#xe603"></div>
+            </a>
+            <a href="#">
+                <div class="title">Menu Item Three</div>
+                <div class="icon" data-icon="&#xe604"></div>
+            </a>
+            <a href="#">
+                <div class="title">Menu Item Four</div>
+                <div class="icon" data-icon="&#xe605"></div>
+            </a>
+            <a href="#">
+                <div class="title">Menu Item Five</div>
+                <div class="icon" data-icon="&#xe606"></div>
+            </a>
+            <div id="menu-contact">
+                <div class="vcard">
+                <small>The Fort</small>
+                <p class="adr">
+                    <span class="street-address">9412 Yeet Drive</span><br>
+                    <span class="region">Tampa, Florida</span> <span class="postal-code">49494</span><br>
+                </p>
+                <p class="fn"><a class="url" href="mailto:">contact@mail.com</a><p>
+                <p class="tel">+1 (239) 770-5199</p>
+                </div>
+            </div>
+            <div id="menu-social">
+                <a class="icon" data-icon="&#xe60b" href="#" alt="Twitter"></a>
+                <a class="icon" data-icon="&#xe60c" href="#" alt="Instagram"></a>
+                <a class="icon" data-icon="&#xe60d" href="#" alt="Dribbble"></a>
+                <a class="icon" data-icon="&#xe60e" href="#" alt="Linkein"></a>
+            </div>
+        </nav>
+        <div class="content-wrap">
+            <nav id="top-menu">
+                <a href="#" class="logo" alt="SomeGood Design">logo</a>
+            </nav>
+            <section class="section" id="intro">
+                <div class="haze container typography vcenter">
+                    <div class="vcenter-cell">
+                        <h1>Project Number One</h1>
+                        <p class="meta">Some line of text better describing that thing above That could<br> potentially have two lines!</p>
+                        <a id="move-along" href="#" data-icon="&#xe600" href="#" alt="Move Along"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-one">
+                <div class="container">
+                    <div class="row cols-3">
+                        <div class="col">
+                            <h3>Column Title</h3>
+                            <p>Etiam tortor arcu, luctus ut erat sed, volutpat posuere purus. Vivamus pharetra porttitor metus vel elementum. Aenean eget condimentum turpis. Cras sed hendrerit magna.</p>
+                        </div>
+                        <div class="col">
+                            <h3>Column Title</h3>
+                            <p>Etiam tortor arcu, luctus ut erat sed, volutpat posuere purus. Vivamus pharetra porttitor metus vel elementum. Aenean eget condimentum turpis. Cras sed hendrerit magna.</p>
+                        </div>
+                        <div class="col">
+                            <h3>Column Title</h3>
+                            <p>Etiam tortor arcu, luctus ut erat sed, volutpat posuere purus. Vivamus pharetra porttitor metus vel elementum. Aenean eget condimentum turpis. Cras sed hendrerit magna.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <div class="page-wrap">
+
+        <div class="overlay" id="load-overlay"></div>
+        <div class="overlay" id="menu-overlay"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+
+        $(document).ready(function() {
+
+            $("#menu-toggle").on('click', function(){
+                $("#menu-toggle").toggleClass('active');
+                $("#main-menu").toggleClass('active');
+                $("#menu-overlay").toggleClass('active');
+            });
+
+
+            var parallax = document.getElementById("intro");
+            var speed = 3;
+
+            /* clean this crap up later */
+
+            var yOffset = window.pageYOffset;
+            parallax.style.backgroundPosition = "center " + (yOffset / speed) + "px";
+
+            window.onscroll = function parallaxScroll() {
+              var yOffset = window.pageYOffset;
+              parallax.style.backgroundPosition = "center " + (yOffset / speed) + "px";
+            }
+
+          $("body").addClass('loaded');
+
+        });
+
+        </script>
+
+        <!-- Font Icons by Stephen Hutchings Typicons -->
+
+    </body>
+</html>

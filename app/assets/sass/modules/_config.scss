@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------------------
+
+
+Module Config SASS File
+By: Kevin Mercier
+Version: 1.0.0
+Parent: Main.scss
+
+
+---------------------------------------------------------------------------*/
+
+
+@mixin modules($current_query){
+
+	@include module_list($current_query);
+
+}
+
+
+/* --------------------------------------
+	Module List
+---------------------------------------*/
+
+@mixin module_list($current_query){
+
+	//@include navigation($current_query);
+
+}
+
+/* --------------------------------------
+	Module Supports
+---------------------------------------*/
+
+
+/* @include navigation */
+
+$menu-item-count: 8;
+$menu-max-width: $page-max-width;
+$full-menu-type: flyout; //flyout, super-flyout
+$mobile-menu-type: overlay; //side-flyout, top-flyout, top-overlap, overlay
+
+
+/* @iconfont glyphs for menu */
+
+.icon-arrow-left:before  { content: "\e600"; }
+.icon-arrow-right:before { content: "\e601"; }
+.icon-calendar:before    { content: "\e602"; }
+.icon-list:before        { content: "\e603"; }
+.icon-search:before      { content: "\e604"; }
