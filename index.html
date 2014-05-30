@@ -24,6 +24,32 @@
         <![endif]-->
 
     <div id="page-wrap">
+        <div id="contact">
+            <div class="container">
+                <h1><b>Hey there</b><br>How may we help you?</h1>
+                <form>
+                    <div class="row cols-3">
+                        <div class="col">
+                            <input class="fc-name" name="Full Name" value="Full Name*"/>
+                        </div>
+                        <div class="col">
+                            <input class="fc-email" name="Email" value="Email*"/>
+                        </div>
+                        <div class="col">
+                            <input class="fc-website" name="Website" value="Website"/>
+                        </div>
+                    </div>
+                    <div class="row cols-1">
+                        <div class="col">
+                            <textarea class="fc-message" name="Message">Message*</textarea>
+                            <button class="submit">
+                                Let's Go
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
         <div id="toggle-nav">
             <a id="menu-toggle" href="#" alt="Menu">
                 <div class="bar bar1"></div>
@@ -42,24 +68,20 @@
         </div>
         <nav id="main-menu">
             <a href="#" class="current">
-                <div class="title">Holmes</div>
+                <div class="title">Home</div>
                 <div class="icon" data-icon="&#xe602"></div>
             </a>
             <a href="#">
-                <div class="title">Menu Item Two</div>
+                <div class="title">About</div>
                 <div class="icon" data-icon="&#xe603"></div>
             </a>
             <a href="#">
-                <div class="title">Menu Item Three</div>
+                <div class="title">Work</div>
                 <div class="icon" data-icon="&#xe604"></div>
             </a>
             <a href="#">
-                <div class="title">Menu Item Four</div>
+                <div class="title">Labs</div>
                 <div class="icon" data-icon="&#xe605"></div>
-            </a>
-            <a href="#">
-                <div class="title">Menu Item Five</div>
-                <div class="icon" data-icon="&#xe606"></div>
             </a>
             <div id="menu-contact">
                 <div class="vcard">
@@ -86,14 +108,15 @@
             <section class="section" id="intro">
                 <div class="haze container typography vcenter">
                     <div class="vcenter-cell">
-                        <h1>Project Number One</h1>
-                        <p class="meta">Some line of text better describing that thing above That could<br> potentially have two lines!</p>
+                        <h1>We're Nobody,</h1>
+                        <p class="meta">a digital creative agency that has an obsession with forging experiences.<br> We take ideas on an adventure.
+                        </p>
                         <a id="move-along" href="#" data-icon="&#xe600" href="#" alt="Move Along"></a>
                     </div>
                 </div>
             </section>
             <section id="section-one">
-                <div class="container">
+                <div class="container typography">
                     <div class="row cols-3">
                         <div class="col">
                             <h3>Column Title</h3>
@@ -127,11 +150,16 @@
                 $("#menu-overlay").toggleClass('active');
             });
 
+            $("#contact-toggle").on('click', function(){
+                $("#contact-toggle").toggleClass('active');
+                $("#contact").toggleClass('active');
+            });
+
+            /*
 
             var parallax = document.getElementById("intro");
             var speed = 3;
 
-            /* clean this crap up later */
 
             var yOffset = window.pageYOffset;
             parallax.style.backgroundPosition = "center " + (yOffset / speed) + "px";
@@ -140,6 +168,8 @@
               var yOffset = window.pageYOffset;
               parallax.style.backgroundPosition = "center " + (yOffset / speed) + "px";
             }
+
+            */
 
           $("body").addClass('loaded');
 
