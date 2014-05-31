@@ -2,5 +2,3 @@ AuthType Basic
 AuthName "restricted area"  
 AuthUserFile /path/to/the/directory/you/are/protecting/.htpasswd  
 require valid-user
-Allow from 127.0.0.1
-Satisfy Any
