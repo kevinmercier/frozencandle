@@ -1,4 +1,8 @@
-AuthType Basic  
-AuthName "restricted area"  
+AuthName "restricted area"
+AuthType Basic 
 AuthUserFile /home/152199/domains/frozencandle.com/html/.htpasswd
 require valid-user
+
+Require valid-user
+Allow from 127.0.0.1
+Satisfy Any
