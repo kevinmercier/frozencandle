@@ -1,4 +1,4 @@
 AuthType Basic  
 AuthName "restricted area"  
-AuthUserFile /path/to/the/directory/you/are/protecting/.htpasswd  
+AuthUserFile /home/152199/domains/frozencandle.com/html/.htpasswd
 require valid-user
