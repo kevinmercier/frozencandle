@@ -1,4 +1,13 @@
-AuthType Basic  
-AuthName "restricted area"  
+# permit by USER || IP
+Satisfy any
+# USER
 AuthUserFile /home/152199/domains/frozencandle.com/html/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Password Protected Area"
+AuthType Basic
 require valid-user
+# IP
+order deny,allow
+deny from all
+allow from 127.0.0.1
+allow from localhost

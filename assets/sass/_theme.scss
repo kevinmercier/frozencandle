@@ -31,7 +31,7 @@ Global Media Query
 	h3{ font-family: $heading-font-family; }
 
 	/* others */
-	.content-wrap{ position: relative; padding-right: $grid*3; }
+	.content-wrap{ position: relative; }
 
 	/* load graphic */
 	.overlay{ height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999999; }
@@ -72,7 +72,7 @@ Global Media Query
 
 
 	/* main-nav */
-	#toggle-nav{ position: fixed; height: 100%; width: $grid*3; right: 0; top: 0; z-index: 20; background: #0e0e0e;
+	#toggle-nav{ position: fixed; z-index: 20; background: #0e0e0e;
 
 		a{ position: relative; color: #fff; width: $grid*3; height: $grid*3; text-align: center; display: block; overflow: hidden;
 			&#menu-toggle{
@@ -107,7 +107,7 @@ Global Media Query
 		}
 	}
 
-	nav#main-menu{ @include transition( all 0.25s ease-in-out ); position: fixed; top: 0; right: -$grid*9; background: red; width: $grid*12; background: #2e2e2e; height: 100%; z-index: 10;
+	nav#main-menu{ @include transition( all 0.35s ease-in-out ); position: fixed; top: 0; right: -$grid*12; background: red; width: $grid*12; background: #2e2e2e; height: 100%; z-index: 10;
 		> a{ font-family: $fixed-font-family; letter-spacing: 0.04em; @include transition-property(right); @include transition-timing-function(ease-in-out); overflow: hidden; font-size: 14px; font-weight: bold; text-transform: uppercase; color: #fff; height: $grid*3; display: block; text-align: right; line-height: $grid*3; right: -$grid*9; top: auto; position: relative;
 			&:nth-child(1){ @include transition-duration(0.25s);
 				.icon{ @include transition( all 0.45s ease-in-out ); }
@@ -229,6 +229,7 @@ Large Media Query
 
 @mixin lg{
 
+
 }
 
 
@@ -286,6 +287,10 @@ Greater Than Medium Media Query
 ---------------------------------------*/
 
 @mixin gt-md{
+
+	/* Fix menu to the right */
+	.content-wrap{ padding-right: $grid*3; }
+	#toggle-nav{ height: 100%; width: $grid*3; right: 0; top: 0; }
 
 }
 

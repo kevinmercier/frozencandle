@@ -853,8 +853,7 @@ Links: Main.scss, Theme.scss
 
   /* others */
   .content-wrap {
-    position: relative;
-    padding-right: 72px; }
+    position: relative; }
 
   /* load graphic */
   .overlay {
@@ -1009,10 +1008,6 @@ Links: Main.scss, Theme.scss
   /* main-nav */
   #toggle-nav {
     position: fixed;
-    height: 100%;
-    width: 72px;
-    right: 0;
-    top: 0;
     z-index: 20;
     background: #0e0e0e; }
     #toggle-nav a {
@@ -1102,12 +1097,12 @@ Links: Main.scss, Theme.scss
         margin-top: 0px; }
 
   nav#main-menu {
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     position: fixed;
     top: 0;
-    right: -216px;
+    right: -288px;
     background: red;
     width: 288px;
     background: #2e2e2e;
@@ -1401,6 +1396,16 @@ Links: Main.scss, Theme.scss
 /* --------------------------------------
 	Query Range
 ---------------------------------------*/
+@media (min-width: 993px) {
+  /* Fix menu to the right */
+  .content-wrap {
+    padding-right: 72px; }
+
+  #toggle-nav {
+    height: 100%;
+    width: 72px;
+    right: 0;
+    top: 0; } }
 /* --------------------------------------
 	Print
 ---------------------------------------*/
