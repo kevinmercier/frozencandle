@@ -825,6 +825,9 @@ Links: Main.scss, Theme.scss
 
 ---------------------------------------------------------------------------*/
 /* --------------------------------------
+	Inline Query Mixins
+---------------------------------------*/
+/* --------------------------------------
 	Global Queries
 ---------------------------------------*/
 @media (min-width: 0px) {
@@ -1013,8 +1016,6 @@ Links: Main.scss, Theme.scss
     #toggle-nav a {
       position: relative;
       color: #fff;
-      width: 72px;
-      height: 72px;
       text-align: center;
       display: block;
       overflow: hidden; }
@@ -1028,7 +1029,11 @@ Links: Main.scss, Theme.scss
         background: #fff;
         margin: 3px auto; }
       #toggle-nav a#menu-toggle .bar1 {
-        margin-top: 28px; }
+        margin-top: 28px; } }
+      @media (min-width: 0px) and (max-width: 992px) {
+        #toggle-nav a#menu-toggle .bar1 {
+          margin-top: 15px; } }
+@media (min-width: 0px) {
       #toggle-nav a#menu-toggle.active {
         background: #000; }
         #toggle-nav a#menu-toggle.active .bar {
@@ -1053,13 +1058,7 @@ Links: Main.scss, Theme.scss
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
-        position: relative;
-        /*
-        &:hover{ 
-        	.phone{ font-size: 16px; @include transform(rotate(60deg)); left: 15px; }
-        	.smile{ right: 18px; }
-        }
-        */ }
+        position: relative; }
         #toggle-nav a#contact-toggle .phone {
           -webkit-transition: all 0.25s ease-in-out;
           -moz-transition: all 0.25s ease-in-out;
@@ -1078,23 +1077,6 @@ Links: Main.scss, Theme.scss
           top: 20px; }
         #toggle-nav a#contact-toggle.active {
           background: #000; }
-    #toggle-nav #page-progress {
-      position: absolute;
-      top: 50%;
-      margin-top: -35px;
-      left: 50%;
-      margin-left: -5px; }
-      #toggle-nav #page-progress .dot {
-        display: block;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.2);
-        margin-top: 10px; }
-      #toggle-nav #page-progress .dot.active {
-        background: #2989c6; }
-      #toggle-nav #page-progress .dot:first-child {
-        margin-top: 0px; }
 
   nav#main-menu {
     -webkit-transition: all 0.35s ease-in-out;
@@ -1405,7 +1387,44 @@ Links: Main.scss, Theme.scss
     height: 100%;
     width: 72px;
     right: 0;
-    top: 0; } }
+    top: 0; }
+    #toggle-nav a {
+      position: relative;
+      color: #fff;
+      width: 72px;
+      height: 72px; }
+
+  #page-progress {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 50%;
+    margin-left: -5px; }
+    #page-progress .dot {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      margin-top: 10px; }
+    #page-progress .dot.active {
+      background: #2989c6; }
+    #page-progress .dot:first-child {
+      margin-top: 0px; } }
+@media (max-width: 992px) {
+  .content-wrap {
+    padding-top: 48px; }
+
+  #toggle-nav {
+    height: 48px;
+    width: 100%;
+    top: 0; }
+    #toggle-nav a {
+      width: 48px;
+      height: 48px; }
+
+  #page-progress {
+    display: none; } }
 /* --------------------------------------
 	Print
 ---------------------------------------*/
