@@ -803,10 +803,10 @@ Greater Than Medium Media Query
 Greater Than Large Media Query
 ---------------------------------------*/
 /* --------------------------------------
-Less Than Small Media Query
+Less Than Medium Media Query
 ---------------------------------------*/
 /* --------------------------------------
-Less Than Medium Media Query
+Less Than Small Media Query
 ---------------------------------------*/
 /* --------------------------------------
 Less Than Large Media Query
@@ -1034,26 +1034,6 @@ Links: Main.scss, Theme.scss
         #toggle-nav a#menu-toggle .bar1 {
           margin-top: 15px; } }
 @media (min-width: 0px) {
-      #toggle-nav a#menu-toggle.active {
-        background: #000; }
-        #toggle-nav a#menu-toggle.active .bar {
-          margin-bottom: 0px; }
-        #toggle-nav a#menu-toggle.active .bar1 {
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-          margin-top: 32px; }
-        #toggle-nav a#menu-toggle.active .bar2 {
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          margin-top: -4px; }
-        #toggle-nav a#menu-toggle.active .bar3 {
-          margin-top: 10px; }
       #toggle-nav a#contact-toggle {
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
@@ -1084,21 +1064,12 @@ Links: Main.scss, Theme.scss
     transition: all 0.35s ease-in-out;
     position: fixed;
     top: 0;
-    right: -288px;
-    background: red;
-    width: 288px;
     background: #2e2e2e;
     height: 100%;
     z-index: 10; }
     nav#main-menu > a {
       font-family: "proxima-nova-alt", sans-serif;
       letter-spacing: 0.04em;
-      -webkit-transition-property: right;
-      -moz-transition-property: right;
-      transition-property: right;
-      -webkit-transition-timing-function: ease-in-out;
-      -moz-transition-timing-function: ease-in-out;
-      transition-timing-function: ease-in-out;
       overflow: hidden;
       font-size: 14px;
       font-weight: bold;
@@ -1108,52 +1079,29 @@ Links: Main.scss, Theme.scss
       display: block;
       text-align: right;
       line-height: 72px;
-      right: -216px;
-      top: auto;
       position: relative; }
       nav#main-menu > a:nth-child(1) {
         -webkit-transition-duration: 0.25s;
         -moz-transition-duration: 0.25s;
         transition-duration: 0.25s; }
-        nav#main-menu > a:nth-child(1) .icon {
-          -webkit-transition: all 0.45s ease-in-out;
-          -moz-transition: all 0.45s ease-in-out;
-          transition: all 0.45s ease-in-out; }
       nav#main-menu > a:nth-child(2) {
         -webkit-transition-duration: 0.35s;
         -moz-transition-duration: 0.35s;
         transition-duration: 0.35s; }
-        nav#main-menu > a:nth-child(2) .icon {
-          -webkit-transition: margin-left 0.55s ease-in-out;
-          -moz-transition: margin-left 0.55s ease-in-out;
-          transition: margin-left 0.55s ease-in-out; }
       nav#main-menu > a:nth-child(3) {
         -webkit-transition-duration: 0.45s;
         -moz-transition-duration: 0.45s;
         transition-duration: 0.45s; }
-        nav#main-menu > a:nth-child(3) .icon {
-          -webkit-transition: margin-left 0.65s ease-in-out;
-          -moz-transition: margin-left 0.65s ease-in-out;
-          transition: margin-left 0.65s ease-in-out; }
       nav#main-menu > a:nth-child(4) {
         -webkit-transition-duration: 0.55s;
         -moz-transition-duration: 0.55s;
         transition-duration: 0.55s; }
-        nav#main-menu > a:nth-child(4) .icon {
-          -webkit-transition: margin-left 0.75s ease-in-out;
-          -moz-transition: margin-left 0.75s ease-in-out;
-          transition: margin-left 0.75s ease-in-out; }
       nav#main-menu > a:nth-child(5) {
         -webkit-transition-duration: 0.65s;
         -moz-transition-duration: 0.65s;
         transition-duration: 0.65s; }
-        nav#main-menu > a:nth-child(5) .icon {
-          -webkit-transition: margin-left 0.85s ease-in-out;
-          -moz-transition: margin-left 0.85s ease-in-out;
-          transition: margin-left 0.85s ease-in-out; }
       nav#main-menu > a .title {
         float: left;
-        width: 216px;
         padding: 0 48px;
         height: 72px;
         -webkit-transition: line-height 0.15s ease-in-out;
@@ -1166,7 +1114,6 @@ Links: Main.scss, Theme.scss
         float: left;
         width: 72px;
         height: 72px;
-        margin-left: -60px;
         font-size: 32px; }
         nav#main-menu > a .icon:before {
           display: block;
@@ -1187,7 +1134,6 @@ Links: Main.scss, Theme.scss
       transition: all 0.25s ease-in-out 0.3s; }
       nav#main-menu #menu-social a {
         float: left;
-        width: 72px;
         height: 72px;
         text-align: center;
         color: #999;
@@ -1224,34 +1170,26 @@ Links: Main.scss, Theme.scss
       -moz-transition: all 0.25s ease-in-out 0.3s;
       transition: all 0.25s ease-in-out 0.3s;
       opacity: 0; }
-    nav#main-menu.active {
-      right: 72px; }
-      nav#main-menu.active > a {
-        right: 0; }
-        nav#main-menu.active > a:nth-child(odd) {
-          background-color: rgba(0, 0, 0, 0.2); }
-        nav#main-menu.active > a:nth-child(even) {
-          background-color: rgba(0, 0, 0, 0.1); }
-        nav#main-menu.active > a:hover {
+    nav#main-menu.active > a {
+      right: 0; }
+      nav#main-menu.active > a:hover {
+        background-color: rgba(0, 0, 0, 0.4) !important; }
+        nav#main-menu.active > a:hover .title {
+          line-height: 68px;
           background-color: rgba(0, 0, 0, 0.4); }
-          nav#main-menu.active > a:hover .title {
-            line-height: 68px;
-            background-color: rgba(0, 0, 0, 0.4); }
-          nav#main-menu.active > a:hover .icon:before {
-            margin-top: 16px; }
-        nav#main-menu.active > a .icon {
-          margin-left: 0px; }
-      nav#main-menu.active #menu-social {
+        nav#main-menu.active > a:hover .icon:before {
+          margin-top: 16px; }
+    nav#main-menu.active #menu-social {
+      opacity: 1; }
+      nav#main-menu.active #menu-social a {
         opacity: 1; }
-        nav#main-menu.active #menu-social a {
-          opacity: 1; }
-          nav#main-menu.active #menu-social a:hover {
-            background: rgba(0, 0, 0, 0.2); }
-            nav#main-menu.active #menu-social a:hover:before {
-              color: #2989c6;
-              margin-top: -6px; }
-      nav#main-menu.active #menu-contact {
-        opacity: 1; }
+        nav#main-menu.active #menu-social a:hover {
+          background: rgba(0, 0, 0, 0.2); }
+          nav#main-menu.active #menu-social a:hover:before {
+            color: #2989c6;
+            margin-top: -6px; }
+    nav#main-menu.active #menu-contact {
+      opacity: 1; }
 
   /* top-nav */
   nav#top-menu {
@@ -1393,6 +1331,69 @@ Links: Main.scss, Theme.scss
       color: #fff;
       width: 72px;
       height: 72px; }
+      #toggle-nav a#menu-toggle.active {
+        background: #000; }
+        #toggle-nav a#menu-toggle.active .bar {
+          margin-bottom: 0px; }
+        #toggle-nav a#menu-toggle.active .bar1 {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          margin-top: 32px; }
+        #toggle-nav a#menu-toggle.active .bar2 {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          margin-top: -4px; }
+        #toggle-nav a#menu-toggle.active .bar3 {
+          margin-top: 10px; }
+
+  nav#main-menu {
+    right: -288px;
+    width: 288px; }
+    nav#main-menu > a {
+      -webkit-transition-property: right;
+      -moz-transition-property: right;
+      transition-property: right;
+      right: -216px; }
+      nav#main-menu > a:nth-child(1) .icon {
+        -webkit-transition: margin-left 0.45s ease-in-out;
+        -moz-transition: margin-left 0.45s ease-in-out;
+        transition: margin-left 0.45s ease-in-out; }
+      nav#main-menu > a:nth-child(2) .icon {
+        -webkit-transition: margin-left 0.55s ease-in-out;
+        -moz-transition: margin-left 0.55s ease-in-out;
+        transition: margin-left 0.55s ease-in-out; }
+      nav#main-menu > a:nth-child(3) .icon {
+        -webkit-transition: margin-left 0.65s ease-in-out;
+        -moz-transition: margin-left 0.65s ease-in-out;
+        transition: margin-left 0.65s ease-in-out; }
+      nav#main-menu > a:nth-child(4) .icon {
+        -webkit-transition: margin-left 0.75s ease-in-out;
+        -moz-transition: margin-left 0.75s ease-in-out;
+        transition: margin-left 0.75s ease-in-out; }
+      nav#main-menu > a:nth-child(5) .icon {
+        -webkit-transition: margin-left 0.85s ease-in-out;
+        -moz-transition: margin-left 0.85s ease-in-out;
+        transition: margin-left 0.85s ease-in-out; }
+      nav#main-menu > a .title {
+        width: 216px; }
+      nav#main-menu > a .icon {
+        margin-left: -60px; }
+    nav#main-menu #menu-social a {
+      width: 72px; }
+    nav#main-menu.active {
+      right: 72px; }
+      nav#main-menu.active > a .icon {
+        margin-left: 0px; }
+      nav#main-menu.active > a:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.2); }
+      nav#main-menu.active > a:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.1); }
 
   #page-progress {
     position: absolute;
@@ -1411,20 +1412,168 @@ Links: Main.scss, Theme.scss
       background: #2989c6; }
     #page-progress .dot:first-child {
       margin-top: 0px; } }
+@media (max-width: 768px) {
+  nav#main-menu > a {
+    width: 100% !important;
+    float: none; }
+    nav#main-menu > a:nth-child(1) {
+      -webkit-transition: margin-top 0.25s ease-in-out;
+      -moz-transition: margin-top 0.25s ease-in-out;
+      transition: margin-top 0.25s ease-in-out; }
+    nav#main-menu > a:nth-child(2) {
+      -webkit-transition: margin-top 0.3s ease-in-out;
+      -moz-transition: margin-top 0.3s ease-in-out;
+      transition: margin-top 0.3s ease-in-out; }
+    nav#main-menu > a:nth-child(3) {
+      -webkit-transition: margin-top 0.35s ease-in-out;
+      -moz-transition: margin-top 0.35s ease-in-out;
+      transition: margin-top 0.35s ease-in-out; }
+    nav#main-menu > a:nth-child(4) {
+      -webkit-transition: margin-top 0.4s ease-in-out;
+      -moz-transition: margin-top 0.4s ease-in-out;
+      transition: margin-top 0.4s ease-in-out; }
+  nav#main-menu #menu-social {
+    float: none;
+    width: 100%;
+    margin-top: -96px;
+    -webkit-transition: margin-top 0.45s ease-in-out;
+    -moz-transition: margin-top 0.45s ease-in-out;
+    transition: margin-top 0.45s ease-in-out; }
+    nav#main-menu #menu-social a {
+      width: 25%; }
+      nav#main-menu #menu-social a:nth-child(4) {
+        -webkit-transition: opacity 0.25s ease-in-out 0.55s;
+        -moz-transition: opacity 0.25s ease-in-out 0.55s;
+        transition: opacity 0.25s ease-in-out 0.55s; }
+      nav#main-menu #menu-social a:nth-child(3) {
+        -webkit-transition: opacity 0.25s ease-in-out 0.5s;
+        -moz-transition: opacity 0.25s ease-in-out 0.5s;
+        transition: opacity 0.25s ease-in-out 0.5s; }
+      nav#main-menu #menu-social a:nth-child(2) {
+        -webkit-transition: opacity 0.25s ease-in-out 0.45s;
+        -moz-transition: opacity 0.25s ease-in-out 0.45s;
+        transition: opacity 0.25s ease-in-out 0.45s; }
+      nav#main-menu #menu-social a:nth-child(1) {
+        -webkit-transition: opacity 0.25s ease-in-out 0.4s;
+        -moz-transition: opacity 0.25s ease-in-out 0.4s;
+        transition: opacity 0.25s ease-in-out 0.4s; }
+  nav#main-menu.active > a {
+    margin-top: 0px; }
+    nav#main-menu.active > a:nth-child(odd) {
+      background-color: rgba(0, 0, 0, 0.2); }
+    nav#main-menu.active > a:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.1); } }
 @media (max-width: 992px) {
   .content-wrap {
     padding-top: 48px; }
 
   #toggle-nav {
     height: 48px;
-    width: 100%;
-    top: 0; }
+    width: 100%; }
     #toggle-nav a {
       width: 48px;
       height: 48px; }
+      #toggle-nav a#menu-toggle {
+        position: absolute;
+        right: 0; }
+        #toggle-nav a#menu-toggle.active {
+          background: #000; }
+          #toggle-nav a#menu-toggle.active .bar {
+            margin-bottom: 0px; }
+          #toggle-nav a#menu-toggle.active .bar1 {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            margin-top: 20px; }
+          #toggle-nav a#menu-toggle.active .bar2 {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            margin-top: -4px; }
+          #toggle-nav a#menu-toggle.active .bar3 {
+            margin-top: 10px; }
+
+  nav#main-menu {
+    width: 100%;
+    height: auto;
+    top: 48px;
+    overflow: hidden; }
+    nav#main-menu > a {
+      overflow: hidden;
+      margin-top: -96px;
+      width: 50%;
+      float: left; }
+      nav#main-menu > a:nth-child(1) {
+        -webkit-transition: margin-top 0.25s ease-in-out;
+        -moz-transition: margin-top 0.25s ease-in-out;
+        transition: margin-top 0.25s ease-in-out; }
+      nav#main-menu > a:nth-child(2) {
+        -webkit-transition: margin-top 0.25s ease-in-out;
+        -moz-transition: margin-top 0.25s ease-in-out;
+        transition: margin-top 0.25s ease-in-out; }
+      nav#main-menu > a:nth-child(3) {
+        -webkit-transition: margin-top 0.35s ease-in-out;
+        -moz-transition: margin-top 0.35s ease-in-out;
+        transition: margin-top 0.35s ease-in-out; }
+      nav#main-menu > a:nth-child(4) {
+        -webkit-transition: margin-top 0.35s ease-in-out;
+        -moz-transition: margin-top 0.35s ease-in-out;
+        transition: margin-top 0.35s ease-in-out; }
+      nav#main-menu > a:nth-child(5) {
+        -webkit-transition: margin-top 0.45s ease-in-out;
+        -moz-transition: margin-top 0.45s ease-in-out;
+        transition: margin-top 0.45s ease-in-out; }
+      nav#main-menu > a .title {
+        width: 100%;
+        padding-left: 120px;
+        text-align: left; }
+      nav#main-menu > a .icon {
+        position: absolute;
+        left: 0; }
+    nav#main-menu #menu-contact {
+      display: none; }
+    nav#main-menu #menu-social {
+      float: left;
+      width: 100%;
+      margin-top: -96px;
+      -webkit-transition: margin-top 0.45s ease-in-out;
+      -moz-transition: margin-top 0.45s ease-in-out;
+      transition: margin-top 0.45s ease-in-out; }
+      nav#main-menu #menu-social a {
+        width: 25%; }
+        nav#main-menu #menu-social a:nth-child(4) {
+          -webkit-transition: opacity 0.25s ease-in-out 0.55s;
+          -moz-transition: opacity 0.25s ease-in-out 0.55s;
+          transition: opacity 0.25s ease-in-out 0.55s; }
+        nav#main-menu #menu-social a:nth-child(3) {
+          -webkit-transition: opacity 0.25s ease-in-out 0.5s;
+          -moz-transition: opacity 0.25s ease-in-out 0.5s;
+          transition: opacity 0.25s ease-in-out 0.5s; }
+        nav#main-menu #menu-social a:nth-child(2) {
+          -webkit-transition: opacity 0.25s ease-in-out 0.45s;
+          -moz-transition: opacity 0.25s ease-in-out 0.45s;
+          transition: opacity 0.25s ease-in-out 0.45s; }
+        nav#main-menu #menu-social a:nth-child(1) {
+          -webkit-transition: opacity 0.25s ease-in-out 0.4s;
+          -moz-transition: opacity 0.25s ease-in-out 0.4s;
+          transition: opacity 0.25s ease-in-out 0.4s; }
+    nav#main-menu.active {
+      max-height: 100%; }
+      nav#main-menu.active > a {
+        margin-top: 0px; }
+      nav#main-menu.active #menu-social {
+        margin-top: 0px; }
 
   #page-progress {
-    display: none; } }
+    display: none; }
+
+  /* temp */
+  #contact-toggle {
+    display: none !important; } }
 /* --------------------------------------
 	Print
 ---------------------------------------*/
