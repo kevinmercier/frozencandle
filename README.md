@@ -1,6 +1,3 @@
-frozencandle
-============
-
 <h1>Kevin's Playground</h1>
 
 <h3>In Progress</h3>
