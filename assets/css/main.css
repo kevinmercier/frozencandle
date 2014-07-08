@@ -1254,6 +1254,17 @@ Links: Main.scss, Theme.scss
         left: 40px;
         text-align: center; }
 
+  /* section-two */
+  section#section-two {
+    padding: 144px 0;
+    background: url("../img/randompattern.jpg") center center repeat; }
+    section#section-two .circle {
+      margin: 0 auto;
+      width: 480px;
+      height: 480px;
+      border-radius: 240px;
+      background: rgba(0, 0, 0, 0.5); }
+
   /* GRID TO MOVE OUT LATER */
   .row {
     overflow: hidden;

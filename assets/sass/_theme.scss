@@ -153,6 +153,13 @@ Global Media Query
 		}
 	}
 
+
+	/* section-two */
+
+	section#section-two{ padding: $grid*6 0; background: url('../img/randompattern.jpg') center center repeat; 
+		.circle{ margin: 0 auto; width: $grid*20; height: $grid*20; border-radius: $grid*10; background: rgba(0,0,0,0.5); }
+	}
+
 	/* GRID TO MOVE OUT LATER */
 
 	.row{ overflow: hidden; 
